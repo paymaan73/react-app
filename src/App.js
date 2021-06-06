@@ -6,10 +6,9 @@ class App extends React.Component {
     return (
        <div id="main" className="container">
            <h2>React App</h2>
-           <Product />
-           <Product />
-           <Product />
-           <Product />
+           <Product title="Book" price="23567" />
+           <Product title="phone" price="100000" />
+           <Product title="shirt" price="25430" />
        </div>
    )
     }

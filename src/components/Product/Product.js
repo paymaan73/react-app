@@ -7,6 +7,7 @@ const Product = (props) => {
         <div>
           <p>Product Name: {props.title}</p>
           <p>Product Price: {props.price}</p>
+          <p>{props.children}</p>
         </div>
     )
 }

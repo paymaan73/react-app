@@ -3,14 +3,10 @@ import React from 'react';
 
 const App = () => {
   return (
-    React.createElement(
-      'div',
-      {id: 'main', className: 'container'},
-      'HelloWorld!'
-
-    )
-
-
+      <div id="main" className="container">
+          <h2>React App</h2>
+          <p>Hello World</p>
+      </div>
   )
 }
 

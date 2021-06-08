@@ -53,10 +53,10 @@ class App extends React.Component {
         ],
     }
 
-    changePriceHandler = () =>{
+    changePriceHandler = newTitle =>{
         this.setState({
         products:[
-            {title: 'Book1', price: 59},
+            {title: newTitle, price: 59},
             {title: 'Book2', price: 59},
             {title: 'Book3', price: 59},
         ],
@@ -78,6 +78,7 @@ class App extends React.Component {
            <Product
              title={this.state.products[2].title}
              price={this.state.products[2].price}
+             click={() => this.changePriceHandler('New Title')}
            />
 
 

@@ -9,6 +9,10 @@ class App extends React.Component {
             {title: 'Book3', price: 79},
         ],
     }
+
+    changePriceHandler = () =>{
+        console.log('clicked')
+    }
     render(){
     return (
        <div id="main" className="container">
@@ -28,7 +32,7 @@ class App extends React.Component {
            />
 
 
-         <button>Change Price</button>
+         <button onClick={this.changePriceHandler}>Change Price</button>
        </div>
    )
     }

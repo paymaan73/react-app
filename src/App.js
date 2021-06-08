@@ -2,15 +2,33 @@ import React from 'react';
 import Product from './components/Product/Product'
 
 class App extends React.Component {
+    state = {
+        products:[
+            {title: 'Book1', price: 99},
+            {title: 'Book2', price: 89},
+            {title: 'Book3', price: 79},
+        ],
+    }
     render(){
     return (
        <div id="main" className="container">
            <h2>React App</h2>
-           <Product title="Book" price="23567" />
-           <Product title="phone" price="100000">
-            Discount: 20%
-           </Product>
-           <Product title="shirt" price="25430" />
+           <Product
+             title={this.state.products[0].title}
+             price={this.state.products[0].price}
+           />
+           <Product
+             title={this.state.products[1].title}
+             price={this.state.products[1].price}
+           />
+
+           <Product
+             title={this.state.products[2].title}
+             price={this.state.products[2].price}
+           />
+
+
+         <button>Change Price</button>
        </div>
    )
     }
